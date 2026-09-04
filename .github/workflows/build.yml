@@ -23,5 +23,5 @@ jobs:
           channel: 'stable'
 
       - run: pip install flet pillow
-      # 🚀 REBITE SUPREMO: A flag '--no-interaction' desativa as caixas do rich e passa direto pelo sim/não!
-      - run: python -m flet.cli build apk --no-interaction
+      # 🚀 REBITE SUPREMO: A flag '--yes' força a aceitação das licenças do Google sem interatividade no Linux!
+      - run: python -m flet.cli build apk --yes
