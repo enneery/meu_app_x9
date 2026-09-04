@@ -23,4 +23,5 @@ jobs:
           channel: 'stable'
 
       - run: pip install flet pillow
-      - run: python -m flet.cli build apk
+      # 🚀 REBITE SUPREMO: A flag '--no-interaction' desativa as caixas do rich e passa direto pelo sim/não!
+      - run: python -m flet.cli build apk --no-interaction
