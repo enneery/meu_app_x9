@@ -23,5 +23,5 @@ jobs:
           channel: 'stable'
 
       - run: pip install flet pillow
-      # 🚀 REBITE SUPREMO: A flag '--yes' força a aceitação das licenças do Google sem interatividade no Linux!
-      - run: python -m flet.cli build apk --yes
+      # 🚀 REBITE SUPREMO: O '--module-name' avisa o Linux para ler o arquivo mesmo se ele não se chamar main.py!
+      - run: python -m flet.cli build apk --yes --module-name main
